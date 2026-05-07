@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                bat 'pip install pytest pytest-html'
+                bat 'python -m pip install pytest pytest-html'
 
             }
         }
@@ -17,7 +17,7 @@ pipeline {
 
             steps {
 
-                bat 'pytest tests/ --html=report.html'
+                bat 'python -m pytest tests/ --html=report.html'
 
             }
         }
