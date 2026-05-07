@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                sh 'pytest tests/ --html=report.html'
+                bat 'pytest tests/ --html=report.html'
 
             }
         }
