@@ -4,15 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Install Dependencies') {
-
-            steps {
-
-                bat 'pip install pytest pytest-html'
-
-            }
-        }
-
         stage('Run Pytest Tests') {
 
             steps {
