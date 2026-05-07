@@ -1,16 +1,15 @@
 pipeline {
+
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Build started'
-            }
-        }
 
-        stage('Test') {
+        stage('Run Pytest Tests') {
+
             steps {
-                echo 'Running tests'
+
+                sh 'pytest tests/ --html=report.html'
+
             }
         }
     }
