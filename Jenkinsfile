@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pip install pytest pytest-html'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pip install pytest pytest-html selenium'
 
             }
         }
@@ -17,7 +17,7 @@ pipeline {
 
             steps {
 
-                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pytest tests/ --html=report.html'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pytest new.py --html=report.html'
 
             }
         }
